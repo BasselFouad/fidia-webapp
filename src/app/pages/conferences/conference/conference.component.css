@@ -1,0 +1,75 @@
+
+
+
+.calendar{
+  background-color: #EFB747;
+  transform: scale(0.6,0.6);
+  align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+  /* padding-bottom: 5px; */
+}
+.calendar-text{
+  font-family: montserrant-medium;
+  color: #6B6C6F;
+  font-size: 1rem;
+  align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+.about-conference{
+  font-family: montserrant-bold;
+  color: #6B6C6F ;
+  font-size: 3rem;
+  padding-bottom: 0.4em;
+  padding-top: 0.5em ;
+}
+.description{
+  font-family: montserrant;
+  color: #6B6C6F ;
+  font-size: 1rem;
+}
+/* .option-details{
+  padding-top: 20% ;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+} */
+.option-image{
+  padding-bottom: 10% ;
+}
+.option-details{
+  padding-top: 15% ;
+}
+.ellipse{
+padding: 1%;
+max-width: 50% !important;
+}
+.options:hover .option-details{
+  background-color:  #005086;
+  color: #EFB747;
+}
+.options:hover{
+  background-color:  #005086;
+}
+@media(max-width:767px){
+  .calendar{
+
+   padding:0px !important ;
+  }
+  .calendar-text{
+    padding: 0px !important ;
+  }
+  .options-container{
+    margin-bottom:30% !important ;
+  }
+
+
+.options{
+
+ height: 80% ;
+}
+}
+

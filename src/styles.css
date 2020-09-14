@@ -1,0 +1,302 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'montserrant';
+  src: url('assets/fidiaWebFonts/Montserrat-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrant-black';
+  src: url('assets/fidiaWebFonts/Montserrat-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrant-bold';
+  src: url('assets/fidiaWebFonts/Montserrat-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrant-italic';
+  src: url('assets/fidiaWebFonts/Montserrat-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrant-bold-italic';
+  src: url('assets/fidiaWebFonts/Montserrat-BoldItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrant-extra-bold';
+  src: url('assets/fidiaWebFonts/Montserrat-ExtraBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrant-medium';
+  src: url('assets/fidiaWebFonts/Montserrat-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrant-semi-bold';
+  src: url('assets/fidiaWebFonts/Montserrat-SemiBold.otf  ') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrant-medium-italic';
+  src: url('assets/fidiaWebFonts/Montserrat-MediumItalic.otf  ') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.arrow-left{
+  padding-right: 0px !important;
+  padding-left: 1vw !important ;
+  margin-right: auto;
+  margin-left: auto;
+  top: 50%;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  display: block;
+}
+.arrow-right{
+  padding-right: 0px !important;
+  padding-left: 0vw !important ;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  top: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.options{
+
+  border-radius: 10px;
+  border-width: 1px 1px ;
+  box-shadow: 0px 1px 20px 1px #ACACAC;
+  border-top: 0px !important;
+  border-bottom:1px !important ;
+  width:12vw ;
+  height:26.6vh ;
+  padding: 0px !important;
+}
+
+.option-details{
+  font-family: montserrant-bold;
+  color: #005086 ;
+  font-size: 1rem;
+  display: block;
+  margin:auto ;
+  align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+.option-image{
+  display: block;
+  margin: auto;
+  margin-top: 15% ;
+  max-width: 10.5vw ;
+  max-height: 14vh
+
+}
+.image{
+  height:35vh ;
+  width: 100vw ; ;
+  background-size: cover;
+}
+body{
+  background-color: #FAFAFA;
+}
+/* To customise ellipse, set padding */
+.ellipse{
+  color: #ACACAC ;
+  background: #ACACAC;
+  opacity:48% ;
+  border-radius: 50% ;
+  height:1vh ;
+  max-width:9vw!important ;
+  display: block;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+
+
+}
+.joint-white-container{
+    background: #FFFFFF ;
+    margin-top: 3%;
+    margin-right: 5% ;
+    height:fit-content ;
+    min-height:77vh ;
+    border-radius: 8% ;
+    margin-left: 15% ;
+    padding-left: 0vw!important ;
+
+
+}
+.elements-row{
+ height:20% ;
+ padding-top:1em ;
+ padding-bottom: 1em ;
+ padding-left:2em ;
+}
+
+.element-thumbnail{
+  height: 7rem;
+  width: 6rem ;
+  /* display: block;
+  margin: auto; */
+}
+.element-title{
+  font-family: montserrant-bold;
+  font-size:0.9rem ;
+  color: #005086 ;
+  text-align: left;
+  justify-content: left;
+  line-height: 1rem ;;
+  /* padding-left:1em ; */
+  padding-bottom :1em;;
+  padding-top:1em;
+}
+.element-description{
+  font-family: montserrant;
+  font-size:0.6em ;
+  color: #6B6C6F;
+  padding: 0px!important;
+}
+.element-number{
+  font-family: montserrant-bold;
+  font-size:2vh ;
+  color: #6B6C6F;
+  transform: translateY(40%);
+
+}
+@media(min-width:1024px){
+  .elements-row{
+    height:25% ;
+    padding-left:2em ;
+   }
+}
+.page-title{
+  font-family: montserrant-extra-bold;
+  color :  #005086 ;
+  font-size: 3rem;
+  text-align: left;
+  padding-top:0.1em ;
+  padding-left: 0.8em ;
+  padding-bottom: 0.05em ;
+}
+.page-cont{
+  margin-left:10% ;
+}
+.options-container{
+  padding-top: 3vh ;
+  height:40%;
+}
+/* @media (max-width:1024px){
+  .option-image{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15% ;
+    max-width: 50% ;
+    max-height: 50% ;
+    height: 5em ;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    padding: 0!important;
+    margin-top:10%!important;
+    margin-bottom: 10% !important;
+
+  }
+  .ellipse{
+    color: #ACACAC ;
+    background: #ACACAC;
+    opacity:48% ;
+    border-radius: 50% ;
+    height:1vh ;
+    max-width:9vw!important ;
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 8vw  ;
+  }
+  .page-title{
+    padding: 0px ;
+
+  }
+} */
+@media (max-width: 768px){
+  /* .elements-row{
+    padding-left: 0px ;
+  } */
+  .element-number{
+    padding: 0px;
+    transform: 80%;
+  }
+  .element-description{
+    padding: 0px;
+  }
+  .element-title{
+    padding: 0px !important ;
+  }
+}
+/* tablet sizes */
+@media (max-width:1024px) and (min-width: 768px){
+  .options{
+    border-radius: 10px;
+    border-width: 1px 1px ;
+    box-shadow: 0px 1px 20px 1px #ACACAC;
+    border-top: 0px !important;
+    border-bottom:1px !important ;
+    width:12em ;
+    height:12em;
+    padding: 0px !important;
+  }
+}
+/* phone sizes */
+@media (max-width:700px){
+  .options{
+    border-radius: 10px;
+    border-width: 1px 1px ;
+    box-shadow: 5px 1px 20px 1px #ACACAC;
+    border-top: 0px !important;
+    border-bottom:1px !important ;
+    width:25% ;
+    height: 10rem ;
+    padding: 0px !important;
+  }
+  .options-container{
+    margin: 0!important ;
+  }
+  .option-image{
+    display: block;
+    margin: auto;
+    margin-top: 15% ;
+    max-width: 10.5vw ;
+    max-height: 14vh
+
+  }
+  .option-details{
+    font-size: 0.8rem;
+
+  }
+  .page-cont{
+    margin: 0px !important ;
+  }
+  .page-title{
+    padding-left: 0.5em ;
+  }
+
+
+
+}

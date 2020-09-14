@@ -1,0 +1,29 @@
+
+.question-container{
+  background-color: #FFFFFF;
+  margin-top:4vh ;
+}
+.question{
+  font-family: montserrant-extra-bold;
+  font-size:2.5vh ;
+  text-align: left;
+  color: #4A4E64 ;
+  padding-top:1vh ;
+}
+.choice{
+  font-family: montserrant-semi-bold;
+  font-size:2vh ;
+  text-align: left;
+  color: #4A4E64 ;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+.form-check input[type="radio"]:checked+label {
+  color: #005086;
+}
+@media(max-width: 700px){
+  .question-container{
+    width: 90% ;
+    margin: 3% auto;
+  }
+}

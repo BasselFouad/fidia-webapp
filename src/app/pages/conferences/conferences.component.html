@@ -1,0 +1,52 @@
+<div class=" no-gutters">
+  <app-header [pageImageSource]="pageImageSrc" [pageName]="pageTitle"></app-header>
+  <div class="page-cont">
+  <div class="row">
+          <div class="col page-title">
+            Our Conferences
+          </div>
+        </div>
+
+    <div class="no-gutters options-container">
+        <div class="col-md-12">
+
+          <div class="row">
+            <div class="col col-2">
+                <img  role="button" (click)="onLeftArrow()"class="arrow-left" src="../../../assets/arrows/Path 1809.png" alt="">
+               </div>
+            <div class="col col-8">
+                <div class="row">
+                <div  role="button" (click)="goToConference( conference )"routerLink="{{conference._id}}"class="col" *ngFor="let conference of conferences"
+                >
+                  <div class="options ">
+                    <div class="row">
+                    <div  role="button" class="col image-cont">
+                      <img class="option-image mx-auto d-block"src="{{apiService.getProductsService().getImagesUrl() + conference.imagePath}}" alt="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col ellipse">
+
+                    </div>
+                  </div>
+                    <div class="row option-details">
+                      {{ conference.title }}
+                      </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div role="button" class="col col-2">
+              <img (click)="onRightArrow()"class="arrow-right" src="../../../assets/arrows/Path 1677.png" alt="">
+             </div>
+             </div>
+
+          </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+

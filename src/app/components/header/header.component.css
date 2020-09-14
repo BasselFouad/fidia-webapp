@@ -1,0 +1,31 @@
+.logo{
+  transform: scale(0.6,0.6);
+}
+.page-name{
+  font-family: montserrant-bold;
+  font-size: 1.5rem !important;
+  color:#6B6C6F;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+
+
+}
+
+.header-container{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 1em;
+}
+@media(max-width:700px){
+  .page-name{
+    font-size:1.1rem !important ;
+  }
+  .header-container{
+    width: 100%;
+  }
+}
+
+

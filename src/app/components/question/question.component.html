@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-12 question-container">
+    <div class="row w-100">
+      <div class="col-md-12 question">
+       {{ questionNumber }} - {{ title }}
+      </div>
+    </div>
+    <div class="row w-100">
+      <div class="col " *ngFor="let answer of answers; let indexOfElement = index">
+        <div class="form-check">
+          <input role="button"(change)="registerChange($event)"class="form-check-input" id="{{questionIndex}}"name = "{{title}}"  type="radio" value="{{ answer }}" >
+          <label class="form-check-label choice">
+             {{ answer }}
+          </label>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

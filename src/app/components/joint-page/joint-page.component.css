@@ -1,0 +1,169 @@
+.joint-name{
+  padding-left: 16vw;
+  font-family: montserrant-bold;
+  color: white ;
+  font-size:3rem ;
+  padding-top:3vh ;
+}
+.joint-container{
+  background-color: #FFFFFF;
+  width:120% ;
+  height:45vh ;
+  border-radius: 2vw;
+}
+.joint-image{
+  display: block;
+  margin:auto!important ;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  transform: translateY(40%);
+}
+.no-gutters{
+  background:  #005086!important;
+  height:100vh ;
+}
+.content-container{
+  /* height:60% ; */
+  margin-left:14vw ;
+  margin-top: 22vh ;
+
+}
+.my-container{
+
+  clip-path: circle();
+  background-color: #FFFFFF;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 3rem ;
+  /* margin: auto 0 ; */
+  height:100% ;
+}
+.my-container:hover{
+  padding: 5rem ;
+}
+.my-container:hover .my-image{
+  margin-left: -3rem  ;
+}
+
+.horizontal-divider{
+  /* padding-top:13vh ; */
+  /* margin-top:21vh ; */
+  background-color: #FFFFFF;
+  height:3vh ;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+
+
+}
+
+.col-md-1{
+  padding: 0px!important;
+  margin: 0px!important;
+  width:fit-content !important
+}
+.col-md-4{
+  padding: 0px!important;
+  margin: 0px!important;
+}
+.my-image{
+  display: block;
+  justify-content: center;
+  align-content: center;
+  margin-left: -2em ;
+}
+
+/* .manuals-image{
+  margin-left:-2em  ;
+} */
+.option-desc{
+  /* padding-left: 1.5vw; */
+  font-family: montserrant;
+  text-align: left!important;
+  justify-content: left;
+  justify-items: left;
+  color: white ;
+  font-size:1.5rem ;
+  margin-left: -0.5rem;
+  margin-top:-1vh ;
+  opacity:1!important;
+  visibility: visible;
+}
+
+.ellipse{
+  clip-path: ellipse(43% 3% at 50% 50%);
+  opacity: 48% !important;
+  visibility: visible !important;
+}
+.joint-name-2{
+  font-family: montserrant-bold;
+  color:  #005086;
+  font-size:2rem ;
+  display:block ;
+  align-items: center;
+  margin-top:30% ;
+  align-self: center;
+  text-align: center;
+}
+@media(max-width:1024px) and (min-width:768px){
+  .joint-container{
+    width:120% ;
+    height: auto ;
+  }
+  .content-container{
+    margin-top: 5% ;
+  }
+  .my-image{
+    margin-left:-2.5em!important ;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+  }
+}
+@media(max-width:767px){
+  .joint-container{
+    width:80% ;
+    height: auto ;
+    margin: 5% auto;
+  }
+  .joint-name{
+    padding: 0!important;
+    margin-top: 1rem;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+  }
+  .content-container{
+    margin-left: 2%;
+    margin-top: 0% ;
+
+  }
+  .my-container{
+    padding: 1rem ;
+    margin-top: 1rem;
+  }
+  .vid{
+    padding: 0.5rem ;
+    padding-left: 2em!important ;
+  }
+  .ev{
+    padding: 0.2rem;
+
+  }
+  .ev-image{
+    padding-left: 3em!important;
+  }
+  .manuals-image{
+    margin-left: 0!important ;
+  }
+}
+/* @media(max-width-) */

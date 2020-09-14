@@ -1,0 +1,44 @@
+<div class=" no-gutters">
+  <app-header [pageImageSource]="pageImageSrc"[pageName]="pageTitle"></app-header>
+  <div class="no-gutters no-padding w-100">
+   <div class="col-md-12 w-100 bottom-part">
+    <div class="row w-100">
+      <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 title-description"  style="min-height: 100%;">
+       <div class="my-container">
+        <div class="row">
+          <div class="col page-title">
+            About Fidia
+          </div>
+        </div>
+        <div class="row">
+          <div class="col description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since. Lorem Ipsum is simply ..
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 details-section">
+        <div class="row">
+          <div class="col details">
+            Details
+          </div>
+        </div>
+          <div class="row options-container">
+            <div role ="button" class="col-md-5 col-xs-5 col-sm-5 options" (mouseover)="changePdfIcon=true" (mouseout)="changePdfIcon=false">
+              <img class="option-image"*ngIf="!changePdfIcon"src="../../../assets/icons/pdf.png" alt="Download pdf">
+              <img class="hover option-image"*ngIf="changePdfIcon"src="../../../assets/icons/pdf-1.png" alt="Download pdf">
+            </div>
+            <div role="button" class="col-md-5 col-xs-5 col-sm-5 offset-1 options"  (mouseover)="changeVideoIcon=true;" (mouseout)="changeVideoIcon=false">
+              <img class="video-icon option-image"*ngIf="!changeVideoIcon" src="../../../assets/icons/128.png" alt="Video">
+              <img class="video-icon hover option-image" *ngIf="changeVideoIcon" src="../../../assets/icons/asset-1.png" alt="">
+            </div>
+            <div class="offset-1">
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>

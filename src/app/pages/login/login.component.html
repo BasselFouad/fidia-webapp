@@ -1,0 +1,40 @@
+
+<div  [ngClass]="innerWidth>767 ? '' : 'row'">
+<div  [ngClass]="innerWidth>767 ? 'split right' : 'col col-12 side-img-container'">
+
+  <img class="side-img"src="../../../assets/login/sideimage.png" >
+  <h1 class="welcome">
+    Welcome to InsideJoints.
+  </h1>
+</div>
+    <div  [ngClass]="innerWidth>767 ? 'split left' : 'col col-12'">
+      <div class="row">
+        <div class="rounded float-left logo">
+          <img src="../../../assets/fidiaLogo/Group 1689.png" alt="Fidia Logo">
+        </div>
+      </div>
+
+
+      <div class="centered">
+        <div class="login-text">
+          Login to your account
+        </div>
+        <h1 class= "login-text2">
+          E-mail
+        </h1>
+        <input class="login-input" [(ngModel)]="email" type="text" placeholder="someone@email.com"  required />
+        <h1 class=login-text2>
+          Password
+        </h1>
+        <input class="login-input" [(ngModel)]="password" type="password" class="login-input" placeholder="password" required/>
+        <h4 *ngIf="error" class="error" >{{errorMessage}}</h4>
+        <div class="buttons">
+          <button (click)="login()" type="submit" class=" login-button">LOGIN</button>
+          <button (click)="register()" type="submit" class=" login-button ">REGISTER</button>
+        </div>
+      </div>
+    </div>
+<!-- mz, -->
+</div>
+
+

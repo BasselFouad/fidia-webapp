@@ -1,0 +1,35 @@
+<div class="no-gutters">
+  <app-joint-header  [jointName]="jointName">
+
+  </app-joint-header>
+  <div class="joint-white-container">
+    <div *ngFor="let row of documents2DArray; let indexOfElement=index ;"class="row elements-row">
+      <div *ngFor="let element of row; let rowIndex=index"class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
+        <div role="button" (click)="goToDocumentLink(element)" class="row">
+          <div *ngIf="!twoElementsARow"class="col col-1 element-number">
+            {{indexOfElement+indexOfElement+rowIndex + 1}}
+          </div>
+          <div *ngIf="twoElementsARow"class="col col-1 element-number">
+            {{indexOfElement + 1}}
+          </div>
+          <div class="col col-3">
+            <img class=" element-thumbnail" src="{{../../../../assets/secondaryNav/document@2x.png" alt="">
+          </div>
+          <div class="col col-8">
+            <div class="row">
+              <h3 class=" element-title">
+                {{element.title}}
+              </h3>
+            </div>
+            <div class="row">
+              <h2 class=" element-description">
+                {{element.description}}
+              </h2>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

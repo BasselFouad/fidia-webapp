@@ -1,0 +1,79 @@
+
+<div class="home-container">
+
+  <div class="text-area">
+    <h1 class="welcome">Welcome To</h1>
+    <h2 class="inside-joints">InsideJoints</h2>
+    <h3 class="description">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, vero!
+    </h3>
+  </div>
+
+  <div class="skeleton-container">
+    <img class="skeleton-img" src="../../../assets/skeleton/tr.png" alt="Skeleton" />
+    <div
+      [routerLink]="['/joint']"
+      [queryParams]="{ bodyPart: 'Neck', imgSrc: 'Joints-10.png' }"
+      class="dot-container neck"
+    >
+      <img role="button" src="../../../assets/redSpot/Group 1654.png" alt="" />
+      <p class="desc">Neck</p>
+    </div>
+    <div
+      [routerLink]="['/joint']"
+      [queryParams]="{ bodyPart: 'Hand', imgSrc: 'Joints-03.png' }"
+      class="dot-container hand"
+    >
+      <img role="button" src="../../../assets/redSpot/Group 1654.png" alt="" />
+      <p class="desc">Hand</p>
+    </div>
+    <div
+      [routerLink]="['/joint']"
+      [queryParams]="{ bodyPart: 'Elbow', imgSrc: 'Joints-11.png' }"
+      class="dot-container elbow"
+    >
+      <img role="button" src="../../../assets/redSpot/Group 1654.png" alt="" />
+      <p class="desc">Elbow</p>
+    </div>
+    <div
+      [routerLink]="['/joint']"
+      [queryParams]="{ bodyPart: 'Shoulder', imgSrc: 'Joints-07.png' }"
+      class="dot-container shoulder"
+    >
+      <img role="button" src="../../../assets/redSpot/Group 1654.png" alt="" />
+      <p class="desc shoulder-desc">Shoulder</p>
+    </div>
+    <div
+      [routerLink]="['/joint']"
+      [queryParams]="{ bodyPart: 'Ankle', imgSrc: 'Joints-06.png' }"
+      class="dot-container ankle"
+    >
+      <img role="button" src="../../../assets/redSpot/Group 1654.png" alt="" />
+      <p class="desc ankle-desc">Ankle</p>
+    </div>
+    <div
+      [routerLink]="['/joint']"
+      [queryParams]="{ bodyPart: 'Hip', imgSrc: 'Joints-04.png' }"
+      class="dot-container hip"
+    >
+      <img role="button" src="../../../assets/redSpot/Group 1654.png" alt="" />
+      <p class="desc hip-desc">Hip</p>
+    </div>
+    <div
+      [routerLink]="['/joint']"
+      [queryParams]="{ bodyPart: 'Foot', imgSrc: 'Joints-12.png' }"
+      class="dot-container foot"
+    >
+      <img role="button" src="../../../assets/redSpot/Group 1654.png" alt="" />
+      <p class="desc">Foot</p>
+    </div>
+    <div
+      [routerLink]="['/joint']"
+      [queryParams]="{ bodyPart: 'Knee', imgSrc: 'Joints-09.png' }"
+      class="dot-container knee"
+    >
+      <img role="button" src="../../../assets/redSpot/Group 1654.png" alt="" />
+      <p class="desc">Knee</p>
+    </div>
+  </div>
+</div>

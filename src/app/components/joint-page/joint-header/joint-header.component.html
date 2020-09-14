@@ -1,0 +1,40 @@
+<div class="no-gutters">
+  <div role="button" class="row my-header">
+    <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
+      <div class="joint-name">
+        {{ jointName }}
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
+       <div class="row menu-options ">
+         <div class="col col-3"   [routerLink]="['/joint/manuals']"[queryParams]="{bodyPart:jointName,imgSrc:jointImageToManuals}" >
+           <div  [ngClass]="innerWidth>550 ? 'row' : 'col'" >
+              <img *ngIf="router.url.substring(7,14)=='manuals'"class="menu-icons" src="../../../../assets/secondaryNav/Active/books-stack-of-three.png" alt="">
+              <img *ngIf="router.url.substring(7,14)!='manuals'"class="menu-icons" src="../../../../assets/secondaryNav/books-stack-of-three.png" alt="">
+             <h3  [ngClass]="router.url.substring(7,14)=='manuals' ? 'desc-active' : 'my-desc'">
+              Manual
+             </h3>
+           </div>
+         </div>
+         <div class="col col-3  "    [routerLink]="['/joint/videos']"[queryParams]="{bodyPart:jointName,imgSrc:jointImageToManuals}" >
+          <div  [ngClass]="innerWidth>550 ? 'row' : 'col'" >
+             <img *ngIf="router.url.substring(7,13)=='videos'"class="menu-icons" src="../../../../assets/secondaryNav/Active/85.png" alt="">
+             <img *ngIf="router.url.substring(7,13)!='videos'"class="menu-icons" src="../../../../assets/secondaryNav/85.png" alt="">
+            <h3 [ngClass]="router.url.substring(7,13)=='videos' ? 'desc-active' : 'my-desc'">
+             Videos
+            </h3>
+          </div>
+        </div>
+        <div class="ev col col-6 "  [routerLink]="['/joint/evidences']"[queryParams]="{bodyPart:jointName,imgSrc:jointImageToManuals}" >
+          <div  [ngClass]="innerWidth>550 ? 'row' : 'col'" style="padding: 0px;" >
+              <img *ngIf="router.url.substring(7,16)=='evidences'"class="menu-icons ev-icon" src="../../../../assets/secondaryNav/Active/document.png" alt="">
+              <img *ngIf="router.url.substring(7,16)!='evidences'"class="menu-icons ev-icon" src="../../../../assets/secondaryNav/document.png" alt="">
+            <h3  [ngClass]="router.url.substring(7,16)=='evidences' ? 'desc-active' : 'my-desc'">
+             Scientific Evidence
+            </h3>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>

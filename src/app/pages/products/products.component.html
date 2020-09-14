@@ -1,0 +1,59 @@
+<div class=" no-gutters">
+  <app-header [pageImageSource]="pageImageSrc"[pageName]="pageTitle"></app-header>
+<div class="page-cont">
+        <div class="row">
+          <div class="col page-title">
+            Our Products
+          </div>
+        </div>
+    <div class=" options-container">
+        <div class="col-md-12">
+             <div class="row">
+              <div role="button" class=" col col-2">
+                <img (click)="onLeftArrow()"class="arrow-left" src="../../../assets/arrows/Path 1809.png" alt="">
+              </div>
+              <div class="col col-8">
+                <div class="row">
+              <div class="col" *ngFor="let product of products; let indexOfElement = index"
+                (mouseover)="videoIconBooleanArray[indexOfElement]=true" (mouseout)="videoIconBooleanArray[indexOfElement]=false"
+                (mouseover)="pdfIconBooleanArray[indexOfElement]=true" (mouseout)="pdfIconBooleanArray[indexOfElement]=false"
+              >
+              <div class="options">
+              <div class="row">
+                <div  role="button" class="col  ">
+                  <img class="option-image" src="{{apiService.getProductsService().getImagesUrl() + product.imagePath}}" alt="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col ellipse">
+
+                </div>
+              </div>
+                <div class="row product-icons">
+                    <div  data-toggle="Go To Video" data-placement="top" title="Go To Video" role="button" (click)="goToVideoLink(product)" class="col-4 no-gutters">
+                      <img *ngIf="!videoIconBooleanArray[indexOfElement]"class="no-gutters product-icon video-icon"src="../../../assets/icons/128.png" alt="Video">
+                      <img *ngIf="videoIconBooleanArray[indexOfElement]"class="no-gutters product-icon video-icon"src="../../../assets/icons/asset-1.png" alt="Video">
+                    </div>
+                    <div   data-toggle="Go To Website" data-placement="top" title="Go To Website" role="button" (click)="goToLink( product.websiteLink  )"class="col-4">
+                      <img class="product-icon  web-icon" src="../../../assets/signup/82.png" alt="Link">
+                    </div>
+                    <div   data-toggle="Go To Document" data-placement="top" title="Go To Document" role="button"  (click)="goToPdfLink( product.documentPath  )"class="col-4">
+                      <img *ngIf="!pdfIconBooleanArray[indexOfElement]"class="product-icon pdf-icon" src="../../../assets/icons/pdf.png" alt="">
+                      <img *ngIf="pdfIconBooleanArray[indexOfElement]"class="product-icon pdf-icon"src="../../../assets/icons/pdf-1.png" alt="Video">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+             </div>
+             <div role="button" class="col col-2 ">
+              <img (click)="onRightArrow()"class="arrow-right" src="../../../assets/arrows/Path 1677.png" alt="">
+            </div>
+             </div>
+
+          </div>
+      </div>
+    </div>
+    </div>
+
+

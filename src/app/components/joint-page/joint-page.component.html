@@ -1,0 +1,77 @@
+<div class="no-gutters">
+  <div class="row">
+    <div class="col">
+      <div class="joint-name">
+        {{ jointName }}
+      </div>
+    </div>
+  </div>
+  <div class="row content-container">
+    <div class="col-md-3 col-lg-3 col-xs-12 col-sm-12">
+      <div class="joint-container">
+          <div class="row">
+            <div class="col">
+              <img class="joint-image"src="{{jointImageSrc}}" alt="">
+            </div>
+           </div>
+           <div class="row">
+            <div class="col">
+              <div class="joint-name-2">
+                {{ jointName }}
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div *ngIf="innerWidth>=768" class= 'col horizontal-divider' >
+    </div>
+    <div role="button" [routerLink]="['manuals']"[queryParams]="{bodyPart:jointName,imgSrc:jointImageToManuals}"class="col-md-1 col-xs-3 col-sm-3 "
+        (mouseover)="manualsChangeIcon = true"(mouseout)="manualsChangeIcon=false">
+      <div class="row my-container ">
+        <div class="col  manuals">
+          <img *ngIf="!manualsChangeIcon"class="my-image manuals-image"src="../../../assets/secondaryNav/books-stack-of-three.png" alt="">
+          <img *ngIf="manualsChangeIcon"class="my-image manuals-image"src="../../../assets/secondaryNav/Active/books-stack-of-three.png" alt="">
+        </div>
+      </div>
+        <div [ngClass]="innerWidth>1024 ? 'row' : 'row'">
+          <div class="col option-desc">
+             Manuals
+          </div>
+        </div>
+    </div>
+    <div [ngClass]="innerWidth>=768 ? 'col horizontal-divider' : 'offset-1' " >
+    </div>
+    <div role="button" [routerLink]="['videos']"[queryParams]="{bodyPart:jointName }" class=" col-md-1 col-xs-3 col-sm-3"
+        (mouseover)="videosChangeIcon = true"(mouseout)="videosChangeIcon=false">
+      <div class="row my-container">
+        <div class="col  videos">
+          <img *ngIf="!videosChangeIcon" class="my-image vid" src="../../../assets/secondaryNav/85.png" alt="">
+          <img *ngIf="videosChangeIcon" class="my-image vid" src="../../../assets/secondaryNav/Active/85.png" alt="">
+        </div>
+      </div>
+      <div [ngClass]="innerWidth>1024 ? '' : 'row'">
+        <div class="col option-desc">
+          Videos
+        </div>
+      </div>
+    </div>
+    <div [ngClass]="innerWidth>=768 ? 'col horizontal-divider' : 'offset-1' " >
+    </div>
+    <div role="button" [routerLink]="['evidences']"[queryParams]="{bodyPart:jointName }" class="col-md-1 col-xs-3 col-sm-3"
+        (mouseover)="evidencesChangeIcon = true"(mouseout)="evidencesChangeIcon=false">
+      <div class="row my-container ev">
+        <div class="col  evidences">
+          <img *ngIf="!evidencesChangeIcon" class="my-image ev-image" src="../../../assets/secondaryNav/document.png" alt="">
+          <img *ngIf="evidencesChangeIcon" class="my-image ev-image " src="../../../assets/secondaryNav/Active/document.png" alt="">
+        </div>
+       </div>
+      <div [ngClass]="innerWidth>1024 ? '' : 'row'">
+        <div class="col option-desc">
+           Scientific <br> Evidence
+        </div>
+      </div>
+    </div>
+    <div *ngIf="innerWidth>=768" class= 'col horizontal-divider' >
+    </div>
+  </div>
+</div>

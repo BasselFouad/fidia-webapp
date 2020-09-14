@@ -1,0 +1,78 @@
+.no-gutters{
+  background:  #005086!important;
+  height:100vh
+}
+
+.title{
+
+  color: #005086 ;
+  font-family:montserrant-bold ;
+  font-size: 3rem ;
+  padding-left: 1em ;
+  padding-top:1em ;
+}
+/* .joint-image{
+
+  flex-wrap: wrap;
+  transform: translateY(90%);
+} */
+.description{
+  font-family:montserrant ;
+  font-size: 1.5rem ;
+  padding-left: 1em ;
+  padding-top:1em ;
+  color: #6B6C6F ;
+  min-width: 100% !important; ;
+  margin: 0px!important;
+}
+
+.right-side-container{
+  padding-top:20%;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  display: block;
+  margin : 0 auto ;
+
+}
+.joint-image-container{
+    padding-bottom: 5% ;
+}
+.joint-image-name{
+  font-family: montserrant-bold;
+  font-size: 2rem ;
+  color:  #005086 ;
+  padding-top: 5% ;
+  margin-left: 1rem;
+
+
+}
+.ellipse{
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  margin-left:7.55em
+
+}
+@media(max-width:700px){
+  .joint-white-container{
+
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 13% ;
+  }
+}
+@media(max-width:1024px) and (min-width:700px){
+  .ellipse{
+    margin-left:5em
+  }
+}
+@media(max-width: 699px){
+  .ellipse{
+    padding: 0.5em 2em;
+    margin-left:10em
+  }
+
+}

@@ -1,0 +1,78 @@
+
+
+
+
+     <div  [ngClass]="innerWidth>767 ? '' : 'row'">
+      <div  [ngClass]="innerWidth>767 ? 'split right' : 'col col-12 side-img-container'">
+
+        <img class="side-img"src="../../../assets/login/sideimage.png" >
+        <h1 class="welcome">
+          Sign Up to InsideJoints.
+        </h1>
+      </div>
+          <div  [ngClass]="innerWidth>767 ? 'split left' : 'col col-12'">
+            <div class="row">
+              <div class="col col-2">
+                <img (click)="goBack()" class="back-arrow"src="../../../assets/icons/back-arrow.png" alt="">
+              </div>
+              <div class="col col-2">
+                <img src="../../../assets/fidiaLogo/Group 1689.png" alt="">
+              </div>
+            </div>
+
+
+            <div class="centered">
+              <div class="login-text">
+                Sign Up to new account.
+               </div>
+               <br>
+               <div class="row">
+                <div class="col" >
+                <h1 class=login-text2>
+                First Name
+                </h1>
+                <input class="login-input" [(ngModel)]="firstName" type="text" placeholder="First Name"  required />
+                <h1 class=login-text2>
+                  Last Name
+                </h1>
+                  <input class="login-input" [(ngModel)]="lastName" type="text" placeholder="Last Name"  required />
+                <h1 class=login-text2>
+                  E-mail
+                </h1>
+                  <input class="login-input" [(ngModel)]="email" type="text" placeholder="someone@email.com"  required />
+                  <h1 class=login-text2>
+                    Country
+                  </h1>
+                  <input class="login-input" [(ngModel)]="country" type="text" placeholder="Country"  required />
+                  </div>
+
+                  <div class="col" >
+                  <h1 class=login-text2>
+                    City
+                  </h1>
+                  <input class="login-input" [(ngModel)]="city" type="string" placeholder="City"  required />
+                  <h1 class=login-text2>
+                    Work Place
+                  </h1>
+                  <input class="login-input" [(ngModel)]="workPlace" type="string" placeholder="Work Place"  required />
+                  <h1 class=login-text2>
+                    Contact Number
+                  </h1>
+                  <input class="login-input" [(ngModel)]="contactNumber" type="string" placeholder="Contact Number"  required />
+                  <h1 class=login-text2>
+                  Password
+                  </h1>
+
+              <input class="login-input" [(ngModel)]="password" type="password" class="login-input" placeholder="password" required/>
+              </div>
+            </div>
+             <div>
+              <h6 *ngIf="error" class="error" >{{errorMessage}}</h6>
+               <button (click)="signUp()" type="submit" class="login-button">Sign Up</button>
+             </div>
+            </div>
+          </div>
+      <!-- mz, -->
+      </div>
+
+
